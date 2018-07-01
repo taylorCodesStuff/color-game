@@ -7,3 +7,19 @@ $('button').on('click', function(event){
 	alert(randomNum);
 });
 
+let state = {
+	gamemode: 'easy'
+}
+
+init();
+
+function init(){
+	handleSquareClickEvent();
+}
+
+function handleSquareClickEvent(){
+	$('.square').on('click', function(event){
+		console.log('clicked');
+	});
+}
+
