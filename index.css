@@ -2,5 +2,9 @@
 
 
 h1 {
-	color: red;
+	color: #99ccff;
+}
+
+span {
+	font-size: 200%;
 }
