@@ -23,12 +23,11 @@ function handleSquareClickEvent(){
 
 function handleGameMode(){
 	$('.mode').on('click', function(event){
-		console.log('mode clicked');
-		console.log(state.mode);
+
 		$('.mode').removeClass('selected');
 		$(this).addClass('selected');
 		state.mode = $(this).text();
-		console.log(state.mode);
+
 		determineNumOfSquares(state.mode);
 		displaySquares();
 	});
@@ -53,4 +52,8 @@ function displaySquares(){
 	} else {
 		$('.square').show();
 	}
+}
+
+function reset(){
+
 }
